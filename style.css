@@ -1,0 +1,133 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    background: url('./img/bg-2.jpg');
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu {
+        background-color: rgba(0, 0, 0, .1);
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100px;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
+        .logo {
+            flex: 1 1 auto;
+        }
+            .logo a {
+                color: #fff;
+                font-size: 30px;
+            }
+            .logo a:hover {
+                color: #343434;
+            }
+        .nav {
+            flex: 5 1 auto;
+        }
+            .nav a {
+                color: #fff;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 1 10px;
+                letter-spacing: 2px;
+            }
+            .nav a:hover{
+                color: #343434;
+            }
+        .social {
+            display: flex;
+            flex: 1 1 auto;
+        }
+            .social a {
+                font-size: 18px;
+                color: white;
+                padding: 0 5px;
+            }
+            .social a:hover {
+                color: #343434;
+            }
+    .texto-principal {
+        background: #567890;
+    }
+        h1 {
+            background: #123456;
+        }
+
+.section {
+    background: #000;
+    display: flex;
+}
+    .articulos {
+        background: #345678;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+        .article {
+            background: #789012;
+            flex: 1 1 40%;
+        }
+        .navegacion {
+            background: #420666;
+            flex: 1 1 100%;
+        }
+    .aside {
+        background: #567890;
+        flex: 1 1 auto;
+    }
+        .publicidad {
+            background: #901234;
+        }
+.footer {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+    .pie {
+        background: #567233;
+        width: 300px;
+    }
+
+@media all and (max-width: 800px){
+    .section {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 600px){
+    .articulos {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 400px){
+    .aside {
+        flex-direction: column;
+    }
+}
